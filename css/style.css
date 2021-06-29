@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+
+}
+
+.bolt_logo {
+  padding: 15px 0 15px;
+  width: 50%;
+  text-align: center;
+  color: #4e4e4e;
+}
+
+.button_content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_content_item {
+  padding: 12px 14px;
+  background-color: #74cfae;
+  font-size: 12px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button_content_item:hover {
+  color:#333;
+}
+
+.title ,article ,nav {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.h1_title {
+  padding-top: 250px;
+  text-align: center;
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+.h2_sub_title {
+  padding-top: 20px;
+  padding-bottom: 250px;
+  text-align: center;
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+.section ,footer {
+  width: 100%;
+  background-color:#74cfae;
+}
+
+.section-inner {
+  display: flex;
+  padding-top: 50px;
+}
+
+.section_heading {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section_heading_title {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Raleway',sans-serif;
+}
+
+.section_heading_text {
+  padding-top: 35px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.article_heading {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.article_heading_title {
+  font-size: 24px;
+  font-family: 'Raleway',sans-serif;
+}
+
+.article_thumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_thumb_item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.article_thumb_item {
+  margin-right: 100px;
+  margin-bottom: 80px;
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.article_thumb_item:hover {
+  opacity: 1;
+}
+
+.article_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.article_flex_text {
+  margin: 10px 90px 70px 0;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.article_flex_button {
+  align-items: center;
+  justify-content: center;
+}
+.article_flex_button_text {
+  padding: 14px 20px;
+  background-color: #74cfae;
+  color: #fff;
+  display: inline-block;
+}
+
+.secondary_section {
+  width: 100%;
+  background-color: #4e4e4e;
+}
+
+.secondary_section_heading {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.secondary_section_heading_title {
+  color: #fff;
+  font-family: 'Raleway',sans-serif;
+  font-size: 24px;
+}
+
+.secondary_section_thumb {
+  display: flex;
+  justify-content: center;
+}
+
+.secondary_section_thumb_item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.secondary_section_thumb_item {
+  margin-right: 180px;
+  margin-bottom: 100px;
+}
+
+.secondary_section_thumb_text {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.nav_thumb {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.nav_thumb_item {
+  width: 185px;
+  height: 100px;
+  color: #74cfae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav_thumb_item:hover {
+  background-color: #fff;
+}
+
+.footer_text {
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-align: right;
+}
+
+@media screen and (min-width:1200px) {
+  
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+  
+  .button_content {
+    display: none;
+  }
+
+  .button_content_item {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .button_content {
+    display: none;
+  }
+
+  .button_content_item {
+    display: none;
+  }
+
+  .hamburger {
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .hamburger_item {
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .h1_title {
+    padding-top: 160px;
+    font-size: 80px;
+  }
+
+  .h2_sub_title {
+    padding-bottom: 130px;
+  }
+
+  .section-inner {
+    display: block;
+  }
+}
