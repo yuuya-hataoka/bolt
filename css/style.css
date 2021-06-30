@@ -10,6 +10,7 @@
   background-color: #fff;
   width: 100%;
   position: fixed;
+  z-index: 99;
 }
 
 .inner {
@@ -25,7 +26,6 @@
 .bolt_logo {
   padding: 15px 0 15px;
   width: 50%;
-  text-align: center;
   color: #4e4e4e;
 }
 
@@ -37,10 +37,11 @@
 }
 
 .button_content_item {
-  padding: 12px 14px;
+  padding: 14px 12px;
   background-color: #74cfae;
   font-size: 12px;
   color: #fff;
+  margin: 0 0 0 auto;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -54,11 +55,16 @@
   background-color: #f2f2f2;
 }
 
+.title-inner {
+  padding-top: 62px;
+}
+
 .h1_title {
   padding-top: 250px;
   text-align: center;
   font-size: 90px;
   font-weight: 700;
+  font-family: 'Raleway',sans-serif;
   color: #74cfae;
 }
 
@@ -80,9 +86,17 @@
   padding-top: 50px;
 }
 
+.section_thumb {
+  margin: 0 auto;
+}
+
+.section_thumb_item {
+  vertical-align: top;
+}
+
 .section_heading {
   text-align: center;
-  margin: 0 auto;
+  margin:0 0 0 auto;
 }
 
 .section_heading_title {
@@ -152,6 +166,12 @@
   background-color: #74cfae;
   color: #fff;
   display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.article_flex_button_text:hover {
+  color: #333;
 }
 
 .secondary_section {
