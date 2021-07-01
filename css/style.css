@@ -20,17 +20,19 @@
 
 .header-inner {
   display: flex;
+  justify-content: space-between;
+}
 
+.hamburger {
+  display: none;
 }
 
 .bolt_logo {
   padding: 15px 0 15px;
-  width: 50%;
   color: #4e4e4e;
 }
 
 .button_content {
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,17 +52,21 @@
   color:#333;
 }
 
+.main {
+  padding-top: 62px;
+}
+
 .title ,article ,nav {
   width: 100%;
   background-color: #f2f2f2;
 }
 
 .title-inner {
-  padding-top: 62px;
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .h1_title {
-  padding-top: 250px;
   text-align: center;
   font-size: 90px;
   font-weight: 700;
@@ -69,8 +75,7 @@
 }
 
 .h2_sub_title {
-  padding-top: 20px;
-  padding-bottom: 250px;
+  margin-top: 20px;
   text-align: center;
   font-size: 30px;
   color: #c0c0c0;
@@ -106,15 +111,18 @@
 }
 
 .section_heading_text {
-  padding-top: 35px;
+  margin-top: 35px;
   font-size: 20px;
   color: #fff;
   line-height: 1.5em;
 }
 
-.article_heading {
+.article-inner {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
+}
+
+.article_heading {
   text-align: center;
 }
 
@@ -124,19 +132,24 @@
 }
 
 .article_thumb {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.article_thumb_item:nth-child(3n) {
-  margin-right: 0;
+.article_thumb_item:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.article_thumb_item:nth-child(n+4) {
+  margin-top: 80px;
 }
 
 .article_thumb_item {
-  margin-right: 100px;
-  margin-bottom: 80px;
+  margin-left: 100px;
+  margin-top: 80px;
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
@@ -152,12 +165,14 @@
 }
 
 .article_flex_text {
-  margin: 10px 90px 70px 0;
+  margin-top: 90px;
   text-align: center;
   line-height: 1.5em;
 }
 
 .article_flex_button {
+  margin-left: 90px;
+  margin-top: 90px;
   align-items: center;
   justify-content: center;
 }
@@ -179,9 +194,12 @@
   background-color: #4e4e4e;
 }
 
-.secondary_section_heading {
+.secondary_section-inner {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
+}
+
+.secondary_section_heading {
   text-align: center;
 }
 
@@ -192,17 +210,17 @@
 }
 
 .secondary_section_thumb {
+  margin-top: 70px;
   display: flex;
   justify-content: center;
 }
 
-.secondary_section_thumb_item:nth-child(4n) {
-  margin-right: 0;
+.secondary_section_thumb_item:first-child {
+  margin-left: 0;
 }
 
 .secondary_section_thumb_item {
-  margin-right: 180px;
-  margin-bottom: 100px;
+  margin-left: 180px;
 }
 
 .secondary_section_thumb_text {
@@ -212,11 +230,14 @@
   margin-top: 20px;
 }
 
+.nav-inner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .nav_thumb {
   display: flex;
   justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .nav_thumb_item {
