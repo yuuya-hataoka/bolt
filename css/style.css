@@ -21,6 +21,8 @@
 .header-inner {
   display: flex;
   justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .hamburger {
@@ -28,7 +30,6 @@
 }
 
 .bolt_logo {
-  padding: 15px 0 15px;
   color: #4e4e4e;
 }
 
@@ -89,10 +90,7 @@
 .section-inner {
   display: flex;
   padding-top: 50px;
-}
-
-.section_thumb {
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .section_thumb_item {
@@ -101,13 +99,13 @@
 
 .section_heading {
   text-align: center;
-  margin:0 0 0 auto;
 }
 
 .section_heading_title {
   font-size: 24px;
   color: #fff;
   font-family: 'Raleway',sans-serif;
+  margin-top: 35px;
 }
 
 .section_heading_text {
@@ -149,7 +147,6 @@
 
 .article_thumb_item {
   margin-left: 100px;
-  margin-top: 80px;
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
@@ -162,17 +159,16 @@
 .article_flex {
   display: flex;
   justify-content: center;
+  margin-top: 90px;
 }
 
 .article_flex_text {
-  margin-top: 90px;
   text-align: center;
   line-height: 1.5em;
 }
 
 .article_flex_button {
   margin-left: 90px;
-  margin-top: 90px;
   align-items: center;
   justify-content: center;
 }
@@ -255,10 +251,13 @@
   background-color: #fff;
 }
 
-.footer_text {
-  color: #fff;
+.footer-inner {
   padding-top: 20px;
   padding-bottom: 25px;
+}
+
+.footer_text {
+  color: #fff;
   text-align: right;
 }
 
