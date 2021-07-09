@@ -44,12 +44,9 @@
 
 .button_content_item {
   padding: 14px 12px;
-  background-color: #74cfae;
   font-size: 12px;
-  color: #fff;
   margin: 0 0 0 auto;
-  transition: 0.3s;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .button_content_item:hover {
@@ -156,7 +153,7 @@
   margin-left: 100px;
   opacity: 0.7;
   transition: 0.3s;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .work_thumb_item:hover {
@@ -183,6 +180,7 @@
 .work_flex_button_text {
   padding: 14px 20px;
   display: inline-block;
+  text-decoration: none;
 }
 
 .work_flex_button_text:hover {
@@ -210,7 +208,7 @@
 }
 
 .skills_thumb {
-  margin-top: 70px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -241,9 +239,7 @@
 }
 
 .sns_thumb_item {
-  color: #74cfae;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .sns_thumb_center {
@@ -252,6 +248,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #74cfae;
 }
 
 .sns_thumb_item:hover {
@@ -291,11 +289,7 @@
     margin: 0 auto;
   }
 
-  .button_content {
-    display: none;
-  }
-
-  .button_content_item {
+  .button_content ,.button_content_item {
     display: none;
   }
 
@@ -318,14 +312,25 @@
 
   .bolt_title {
     font-size: 80px;
+    width: 60%;
   }
 
-  .can-do-inner {
+  .bolt_sub_title {
+    width: 60%;
+    line-height: 1.2em;
+    margin: 20px auto 0 auto;
+  }
+
+  .can-do-inner ,.skills_thumb {
     display: block;
     text-align: center;
   }
 
-  .work_thumb {
+  .can-do_heading ,.work_flex_text ,.bolt_title {
+    margin: 0 auto;
+  }
+
+  .work_thumb ,.work_flex ,.sns_thumb {
     display: block;
   }
 
@@ -333,8 +338,31 @@
     margin-left: 0;
   }
 
-  .work_thumb_item:nth-child(n+4) {
+  .work_thumb_area img ,.sns_thumb_center {
+    width: 100%;
+  }
+
+  .work_thumb_item:nth-child(n+4) ,.skills_thumb_item:first-child {
     margin-top: 0;
+  }
+
+  .work_thumb_item:nth-child(4n) {
+    margin-top: 100px;
+  }
+
+  .work_flex_text {
+    width: 70%;
+  }
+
+  .work_flex_button {
+    margin-left: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .skills_thumb_item {
+    margin-left: 0;
+    margin-top: 100px;
   }
   }
 
