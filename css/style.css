@@ -140,6 +140,10 @@
   align-items: center;
 }
 
+.work_thumb_area {
+  display: block;
+}
+
 .work_thumb_item:nth-child(3n+1) {
   margin-left: 0;
 }
@@ -168,13 +172,13 @@
 .work_flex_text {
   text-align: center;
   line-height: 1.5em;
+  width: 49%;
 }
 
 .work_flex_button {
   margin-left: 90px;
   align-items: center;
   justify-content: center;
-  width: 14%;
 }
 .work_flex_button_text {
   padding: 14px 20px;
@@ -237,14 +241,17 @@
 }
 
 .sns_thumb_item {
-  width: 185px;
-  height: 100px;
   color: #74cfae;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: 0.3s;
   cursor: pointer;
+}
+
+.sns_thumb_center {
+  width: 185px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sns_thumb_item:hover {
