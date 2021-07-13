@@ -10,6 +10,7 @@
   background-color: #fff;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 99;
 }
 
@@ -21,8 +22,7 @@
 .header-inner {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 
 .bolt_logo {
@@ -57,13 +57,11 @@
 }
 
 .title ,article ,nav {
-  width: 100%;
   background-color: #f2f2f2;
 }
 
 .title-inner {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding: 250px 0;
 }
 
 .bolt_title {
@@ -82,7 +80,6 @@
 }
 
 .can-do ,footer {
-  width: 100%;
   background-color:#74cfae;
 }
 
@@ -116,8 +113,7 @@
 }
 
 .work-inner {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px 0;
 }
 
 .work_heading {
@@ -187,13 +183,11 @@
 }
 
 .skills {
-  width: 100%;
   background-color: #4e4e4e;
 }
 
 .skills-inner {
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding: 70px 0 100px 0;
 }
 
 .skills_heading {
@@ -228,8 +222,7 @@
 }
 
 .sns-inner {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
 }
 
 .sns_thumb {
@@ -256,8 +249,7 @@
 }
 
 .footer-inner {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px 0;
 }
 
 .footer_text {
@@ -280,6 +272,51 @@
   .fa-bars {
     display: none;
   }
+
+  .can-do-inner ,.skills_thumb ,.work_thumb {
+    display: block;
+    text-align: center;
+  }
+
+  .can-do-inner {
+    padding-bottom: 25px;
+  }
+
+  .can-do_heading ,.work_flex_text ,.bolt_title {
+    margin: 0 auto;
+  }
+
+  .work_flex {
+    display: block;
+  }
+
+  .work_thumb_item {
+    margin-left: 0;
+  }
+
+  .work_thumb_item:nth-child(n+5) {
+    margin-top: 0;
+  }
+
+  .work_flex {
+    margin-top: 80px;
+  }
+
+  .work_flex_text {
+    width: 100%;
+  }
+
+  .work_flex_button {
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .skills_thumb_item {
+    margin-left: 0;
+    margin-top: 88px;
+  }
+
 }
 
 @media screen and (max-width:767px) {
@@ -305,8 +342,7 @@
   }
 
   .title-inner {
-    padding-top: 160px;
-    padding-bottom: 130px;
+    padding: 160px 0 130px 0;
   }
 
   .bolt_title {
@@ -341,12 +377,8 @@
     width: 100%;
   }
 
-  .work_thumb_item:nth-child(n+4) ,.skills_thumb_item:first-child {
+  .work_thumb_item:nth-child(n+5) ,.skills_thumb_item:first-child {
     margin-top: 0;
-  }
-
-  .work_thumb_item:nth-child(4n) {
-    margin-top: 100px;
   }
 
   .work_flex_text {
@@ -354,14 +386,12 @@
   }
 
   .work_flex_button {
-    margin-left: 0;
-    margin-top: 50px;
+    margin: 50px 0;
     text-align: center;
   }
 
   .skills_thumb_item {
-    margin-left: 0;
-    margin-top: 100px;
+    margin: 100px 0 0 0;
   }
   }
 
