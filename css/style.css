@@ -6,11 +6,20 @@
   clear: both;
 }
 
+body {
+  font-family: 'Lato';
+}
+
+.heading_font {
+  font-family: 'Raleway';
+}
+
 .header {
   background-color: #fff;
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 99;
 }
 
@@ -27,6 +36,10 @@
 
 .bolt_logo {
   color: #4e4e4e;
+}
+
+.fa-bars {
+  display: none;
 }
 
 .button_content {
@@ -68,7 +81,6 @@
   text-align: center;
   font-size: 90px;
   font-weight: 700;
-  font-family: 'Raleway',sans-serif;
   color: #74cfae;
 }
 
@@ -101,7 +113,6 @@
 .can-do_heading_title {
   font-size: 24px;
   color: #fff;
-  font-family: 'Raleway',sans-serif;
   margin-top: 35px;
 }
 
@@ -122,7 +133,6 @@
 
 .work_heading_title {
   font-size: 24px;
-  font-family: 'Raleway',sans-serif;
 }
 
 .work_thumb {
@@ -196,7 +206,6 @@
 
 .skills_heading_title {
   color: #fff;
-  font-family: 'Raleway',sans-serif;
   font-size: 24px;
 }
 
@@ -257,20 +266,11 @@
   text-align: right;
 }
 
-@media screen and (min-width:1200px) {
-  .fa-bars {
-    display: none;
-  }
-}
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media (max-width: 1199px) {
   .inner {
     width: 97%;
     margin: 0 auto;
-  }
-
-  .fa-bars {
-    display: none;
   }
 
   .can-do-inner ,.skills_thumb ,.work_thumb {
@@ -319,12 +319,7 @@
 
 }
 
-@media screen and (max-width:767px) {
-  .inner {
-    width: 97%;
-    margin: 0 auto;
-  }
-
+@media (max-width: 767px) {
   .button_content ,.button_content_item {
     display: none;
   }
@@ -347,51 +342,53 @@
 
   .bolt_title {
     font-size: 80px;
-    width: 60%;
+    line-height: 1.2em;
   }
 
   .bolt_sub_title {
-    width: 60%;
     line-height: 1.2em;
     margin: 20px auto 0 auto;
   }
 
-  .can-do-inner ,.skills_thumb {
-    display: block;
-    text-align: center;
+  .can-do_heading {
+    width: 90%;
   }
 
-  .can-do_heading ,.work_flex_text ,.bolt_title {
+  .work_flex_text ,.bolt_title {
     margin: 0 auto;
   }
 
-  .work_thumb ,.work_flex ,.sns_thumb {
+  .sns_thumb ,.fa-bars{
     display: block;
   }
 
-  .work_thumb_item {
-    margin-left: 0;
-  }
-
-  .work_thumb_area img ,.sns_thumb_center {
+  .work_thumb_area img {
     width: 100%;
   }
 
-  .work_thumb_item:nth-child(n+5) ,.skills_thumb_item:first-child {
+  .skills_thumb_item:first-child {
     margin-top: 0;
   }
 
   .work_flex_text {
-    width: 70%;
+    width: 90%;
   }
 
   .work_flex_button {
     margin: 50px 0;
-    text-align: center;
   }
 
   .skills_thumb_item {
     margin: 100px 0 0 0;
+  }
+
+  .sns_thumb_center {
+    height: 150px;
+    width: 100%;
+  }
+
+  .fa-2x {
+    font-size: 3em;
   }
   }
 
