@@ -273,7 +273,7 @@ body {
     margin: 0 auto;
   }
 
-  .can-do-inner ,.skills_thumb ,.work_thumb {
+  .can-do-inner ,.skills_thumb {
     display: block;
     text-align: center;
   }
@@ -290,12 +290,18 @@ body {
     display: block;
   }
 
+  .work_thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .work_thumb_item {
     margin-left: 0;
   }
 
   .work_thumb_area {
-    display: inline-block;
+    display: inline-block
   }
 
   .work_thumb_area img {
